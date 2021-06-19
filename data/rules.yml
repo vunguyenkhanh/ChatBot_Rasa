@@ -1,0 +1,149 @@
+version: "2.0"
+
+rules:
+- rule: Chào tạm biệt
+  steps:
+  - intent: tam_biet
+  - action: utter_tam_biet
+
+- rule: Chào lại khi nhận được lời chào
+  steps:
+  - intent: chao_hoi
+  - action: utter_chao_hoi
+
+- rule: Nói cảm ơn
+  steps:
+  - intent: cam_on
+  - action: utter_cam_on
+
+- rule: Thành phần dinh dưỡng
+  steps:
+  - intent: thanh_phan_dinh_duong
+  - action: utter_thanh_phan_dinh_duong
+
+- rule: Thành phần
+  steps:
+  - intent: thanh_phan
+  - action: utter_thanh_phan
+
+- rule: Hương vị của sản phẩm
+  steps:
+  - intent: huong_vi
+  - action: utter_huong_vi
+
+- rule: Công dụng sản phẩm
+  steps:
+  - intent: cong_dung
+  - action: utter_cong_dung
+
+- rule: Chống chỉ định 
+  steps:
+  - intent: chong_chi_dinh
+  - action: utter_chong_chi_dinh
+
+- rule: Hướng dẫn sử dụng
+  steps:
+  - intent: huong_dan_su_dung
+  - action: utter_huong_dan_su_dung
+
+- rule: Hạn sử dụng
+  steps:
+  - intent: han_su_dung
+  - action: utter_han_su_dung
+
+- rule: Xuất sứ
+  steps:
+  - intent: xuat_su
+  - action: utter_xuat_su
+
+- rule: Công nghệ sản xuấtt
+  steps:
+  - intent: cong_nghe_san_xuat
+  - action: utter_cong_nghe_san_xuat
+
+- rule: Ưu đãi 
+  steps:
+  - intent: uu_dai
+  - action: utter_uu_dai
+
+- rule: Giá
+  steps:
+  - intent: gia
+  - action: utter_gia
+
+- rule: Sản phẩm kèm theo
+  steps:
+  - intent: san_pham_kem_theo
+  - action: utter_san_pham_kem_theo
+
+- rule: Nhận biết hàng thật
+  steps:
+  - intent: nhan_biet_hang_that
+  - action: utter_nhan_biet_hang_that
+
+- rule: Bảo hành
+  steps:
+  - intent: bao_hanh
+  - action: utter_bao_hanh
+
+- rule: Giao hàng 
+  steps:
+  - intent: giao_hang
+  - action: utter_giao_hang
+
+- rule: Đối tượng dùng
+  steps:
+  - intent: doi_tuong_dung
+  - action: utter_doi_tuong_dung
+
+- rule: Chi tiết
+  steps:
+  - intent: chi_tiet
+  - action: utter_chi_tiet
+
+- rule: out-of-scope
+  steps:
+  - intent: nlu_fallback
+  - action: utter_out_of_scope
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: thu_thach_bot
+  - action: utter_i_am_a_chatbot
+
+- rule: Khi khách hàng hỏi muốn lập đơn
+  steps:
+    - intent: Yeu_Cau_Lap_Don
+    - action: utter_i_am_a_chatbot
+    - action: customer_details_form
+    - active_loop: customer_details_form
+
+- rule: Submit thông tin khách hàng
+  condition:
+    - active_loop: customer_details_form
+  steps:
+    - action: customer_details_form
+    - active_loop: null
+    - slot_was_set:
+        - requested_slot: null
+    - action: action_submit
+
+- rule: Cách sử dụng dành cho trẻ < 2t
+  steps:
+  - intent: tuoi_loai_1
+  - action: utter_tuoi_loai_1
+
+- rule: Cách sử dụng dành cho trẻ 2-15t
+  steps:
+  - intent: tuoi_loai_2
+  - action: utter_tuoi_loai_2
+
+- rule: Cách sử dụng dành cho người > 15t
+  steps:
+  - intent: tuoi_loai_3
+  - action: utter_tuoi_loai_3
+
+- rule: Trả lời tư vấn
+  steps:
+  - intent: tu_van
+  - action: utter_tuoi

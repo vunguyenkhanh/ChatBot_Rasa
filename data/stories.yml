@@ -1,0 +1,44 @@
+version: "2.0"
+
+stories:
+
+- story: chao hoi 1
+  steps:
+  - intent: chao_hoi
+  - action: utter_chao_hoi
+  - intent: tam_biet
+  - action: utter_tam_biet
+
+- story: happy path
+  steps:
+  - intent: chao_hoi
+  - action: utter_chao_hoi
+  - intent: tam_trang_tuyet_voi
+  - action: utter_vui
+
+###########################
+- story: hoi ban gi
+  steps:
+  - intent: chao_hoi
+  - action: utter_chao_hoi
+  - intent: hoi_ban_gi
+  - action: utter_hoi_ban_gi
+  - action: utter_hoi_mua_gi
+  - intent: tam_biet
+  - action: utter_tam_biet
+
+- story: hoi ban gi 2
+  steps:
+  - intent: chao_hoi
+  - action: utter_chao_hoi
+  - intent: tam_trang_toi_te
+  - action: utter_co_vu
+  - intent: hoi_ban_gi
+  - action: utter_hoi_ban_gi
+  - intent: tam_biet
+  - action: utter_tam_biet
+
+- story: hoi ban gi 2
+  steps:
+  - intent: cam_on
+  - action: utter_cam_on

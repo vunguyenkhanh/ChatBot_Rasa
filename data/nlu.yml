@@ -1,0 +1,330 @@
+version: "2.0"
+nlu:
+- intent: chao_hoi
+  examples: |
+    - xin chào
+    - chào bạn
+    - hello
+    - hi
+    - hey
+    - mình có vài câu hỏi
+    - có ai giúp mình không
+    - bạn ơi
+    - anh ơi
+    - chị ơi
+    - cháu ơi
+    - chào
+    - có ai ở đây không?
+    - Ê
+    - .
+    - cho mình hỏi
+
+- intent: tam_biet
+  examples: |
+    - bye
+    - goodbye
+    - tạm biệt
+    - chào tạm biệt
+    - chào tạm biệt em
+    - tạm biệt em
+    - tạm biệt em nhé
+
+- intent: xac_nhan
+  examples: |
+    - Vâng
+    - y
+    - đồng ý
+    - tất nhiên
+    - hay đấy
+    - chính xác
+    - uk
+    - ok
+
+- intent: phu_nhan #phủ nhận
+  examples: |
+    - không
+    - ko
+    - không bao giờ
+    - tôi không nghĩ vậy
+    - tôi không thích đấy...
+    - không đời nào
+    - không ổn
+    - no
+
+- intent: cam_on
+  examples: |
+    - thanks
+    - cảm ơn
+    - thank you
+    - chuẩn
+    - hay
+    - cám ơn
+    - thanks
+    - thank you
+    - cảm ơn em
+    - cảm ơn em nhiều nhé
+    - cảm ơn
+
+- intent: tam_trang_tuyet_voi
+  examples: |
+    - tuyệt vời
+    - tốt
+    - rất tốt
+    - rất đỉnh
+    - tôi cảm thấy rất tuyệt
+    - tôi cảm thấy tốt
+    - tôi cảm thấy rất tốt
+    - tôi sẽ cứu thế giời
+    - rất rất hoàn hảo
+    - rất tốt
+    - hoàn toản
+- intent: tam_trang_toi_te
+  examples: |
+    - ngày của tôi thật kinh khủng
+    - tôi buồn
+    - tôi cảm thấy không tốt lắm
+    - tôi không thích hợp
+    - siêu buồn
+    - tôi rất buồn
+    - buồn
+    - rất buồn
+    - không vui
+    - không ổn
+    - rất không ổn
+    - rất rất... buồn
+
+
+- intent: thu_thach_bot
+  examples: |
+    - bạn có phải là bot không?
+    - bạn là con người à?
+    - tôi đang nói chuyện với một con bot?
+    - tôi đang nói chuyện với một con người?
+    - bạn tên gì
+    - tên gì
+    - chị tên gì
+    - anh tên gì
+    - tên của bạn là gì
+    - tên của chị là gì
+    - tên của anh là gì
+    - cho mình hỏi tên nhé
+    - mình muốn biết tên bạn
+    - mình muốn tiện xưng hộ hơn, cho mình biết tên nhé
+    - để tiện xưng hộ thì tên bạn là gì
+    - cho em xin tên của anh ạ
+    - cho em xin tên của chị ạ
+    - được biết tên bạn thì tốt nhỉ
+    - vui lòng cho mình biết tên nhé
+    - xin phép hỏi tên của bạn
+    - vậy thì tên bạn là gì
+    - tên bạn trong tiếng việt là gì
+    - bạn có vui lòng cho mình biết tên được không
+    - chúng ta nên biết tên nhau nhỉ?
+    - em tên là gì thế
+    - tên em là gì
+    - tên em
+    - tên bạn
+    - bạn tên là gì
+    - bạn tên gì thế
+    - em tên gì
+
+###############################################################
+- intent: thanh_phan_dinh_duong
+  examples: |
+    - chất dinh dưỡng
+    - bổ sung những chất gi?
+
+- intent: thanh_phan
+  examples: |
+    - thành phần
+    - gồm những thành phẩn nào?
+
+- intent: huong_vi
+  examples: |
+    - hương vị
+    - có vị gì?
+    - có dễ ăn không?
+    - Bánh có vị gì?
+
+- intent: cong_dung
+  examples: |
+    - tác dụng chính
+    - có lợi
+    - tốt cho
+    - công dụng
+    - công dụng của sản phẩm là gì vậy?
+
+- intent: chong_chi_dinh 
+  examples: |
+    - lưu ý
+    - chống chỉ định
+    - không dùng cho
+    - ko dùng cho
+    - có lưu ý gì khi dùng sản phẩm không?
+
+- intent: huong_dan_su_dung
+  examples: |
+    - liều dùng
+    - dùng làm sao
+    - cách dùng
+    - hướng dẫn sủ dụng
+    - có thể dùng theo những cách nào
+    - dùng sản phẩm này thế nào ạ
+
+- intent: han_su_dung
+  examples: |
+    - hạn dùng
+    - hạn sử dụng
+    - sản phẩm có thể bảo quản trong bao lâu?
+
+- intent: xuat_su
+  examples: |
+    - sản xuất tại\ở đâu?
+    - hàng của nước nào?
+    - có phải hàng ngoại không?
+    - xuất sứ ở đâu
+    - hãng nào sản xuất thế?
+    - bánh có trên thị trường lâu chưa ạ?
+
+- intent: cong_nghe_san_xuat
+  examples: |
+    - công nghệ sản xuất
+    - công nghệ
+
+- intent: uu_dai 
+  examples: |
+    - giảm giá
+    - ưu đãi
+    - sale
+    - có giảm giá gì không?
+    - có sale gì không?
+
+- intent: gia
+  examples: |
+    - xin giá
+    - xin giá bán
+    - giá
+    - bán như thế nào?
+    - bán ra sao đây
+    - cho mk xin giá?
+    - Bánh bn 1 thanh vậy shop
+    - Bánh bao nhiêu 1 thanh vậy shop
+    - Bánh bao nhiêu 1 thanh
+    - Bánh bán theo hộp hay như như thế nào
+    - Bánh bán theo hộp hay như ntn
+
+- intent: san_pham_kem_theo
+  examples: |
+    - dùng cùng
+    - dùng kèm
+    - dùng với
+
+- intent: nhan_biet_hang_that
+  examples: |
+    - phân biệt hàng giả
+    - phân biệt hàng thật
+
+- intent: bao_hanh
+  examples: |
+    - bảo hành
+    - đổi trả
+    - chính sách đổi trả hàng
+
+- intent: giao_hang 
+  examples: |
+    - vận chuyển
+    - giao hàng
+    - shop có giao hàng không?
+    - shop có ship không?
+    - shop có ship hàng không?
+    - có ship không ạ?
+    - có ship ko ạ?
+    - gửi qua đường bưu điện hay như thế nào ạ?
+
+- intent: doi_tuong_dung
+  examples: |
+    - ai có thể dùng được
+    - dùng cho ai
+
+- intent: doi_tuong
+  examples: |
+    - Bé 13m 9kg bé chỉ bú mẹ ko chịu ăn dặm
+    - Bé 13m 9kg bé chỉ bú mẹ ko chịu ăn dặm.
+
+- intent: tuoi
+  examples: |
+    - độ tuổi
+    - tuổi
+
+- intent: nhu_cau_su_dung
+  examples: |
+    - thực phẩm dinh dưỡng
+    - thực phẩm tăng cân
+    - thực phẩm giảm cân
+
+- intent: chi_tiet
+  examples: |
+    - Tư vấn em ạ.
+    - bạn tư vấn cho mình được không?
+
+- intent: tu_van
+  examples: |
+    - Thông tin chi tiết
+    - Tuổi
+    - Cách dùng theo tuổi
+
+#############################################################
+- intent: hoi_ban_gi
+  examples: |
+    - nhà mình bán cái gì vậy ạ?
+    - mình có thể mua gì ở đây?
+    - có những mặt hàng nào?
+    - mình chưa biết mua cái gì?
+    - mình mua cả cửa hàng này?
+    - mua gì bây giờ nhỉ
+
+- intent: Yeu_Cau_Lap_Don
+  examples: |
+    - Anh muốn mua bánh 10 bánh
+    - Em muốn đặt hàng
+
+- intent: my_name
+  examples: |
+    - Anh là [Khánh]{"entity":"user_name", "value": "Khánh"}
+    - [Khánh]{"entity":"user_name", "value": "Khánh"}
+
+- intent: my_phone_number
+  examples: |
+    - Sdt của mình là [0944426469]{"entity": "phone_number"}
+    - [0944426469]{"entity": "phone_number"} đây là số chính
+    - [0944426469]{"entity": "phone_number"}
+
+- intent: out_of_scope
+  examples: |
+    - Có bao nhiêu ngôi sao?
+    - adgaguhshvb
+    - Mày nói cái quái gì thế
+    - abc
+
+- intent: tuoi_loai_1
+  examples: |
+    - bé nhỏ hơn 2 tuổi
+    - bé chưa được 2 tuổi
+    - bé hơn 1 tuổi
+
+- intent: tuoi_loai_2
+  examples: |
+    - nhỏ hơn 15 tuổi
+    - chưa được 15 tuổi
+    - hơn 3 tuổi
+    - học cấp 1
+    - học cấp 2
+
+- intent: tuoi_loai_3
+  examples: |
+    - hơn 16 tuổi
+    - hơn 30 tuổi
+    - u30
+    - u40
+    - u50
+    - u60

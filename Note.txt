@@ -1,0 +1,14 @@
+- Install Rasa: 
+    pip3 install rasa
+- Create a new Rasa project: 
+    rasa init
+- Run Server:
+    rasa run --endpoints endpoints.yml --credentials credentials.yml
+- Run Action:
+    rasa run actions
+- Train a Model: 
+    rasa train
+- Test Your Assistant: 
+    rasa test 
+- Talk to Your Assistant: 
+    rasa shell

@@ -1,0 +1,235 @@
+version: "2.0"
+intents:
+  - chao_hoi
+  - tam_biet
+  - cam_on
+  - xac_nhan
+  - phu_nhan
+  - thanh_phan_dinh_duong
+  - thanh_phan
+  - huong_vi
+  - cong_dung
+  - chong_chi_dinh
+  - huong_dan_su_dung
+  - han_su_dung
+  - xuat_su
+  - cong_nghe_san_xuat
+  - uu_dai
+  - gia
+  - san_pham_kem_theo
+  - nhan_biet_hang_that
+  - bao_hanh
+  - giao_hang
+  - doi_tuong_dung
+  - doi_tuong
+  - tuoi
+  - nhu_cau_su_dung
+  - test_action
+  - chi_tiet
+  - tu_van
+  - my_name:
+      use_entities:
+        - user_name
+  - my_phone_number:
+      use_entities:
+        - phone_number
+  - type_cake_hebi:
+      use_entities:
+        - type_cake
+  - tam_trang_tuyet_voi
+  - tam_trang_toi_te
+  - thu_thach_bot
+  - hoi_ban_gi
+  - Yeu_Cau_Lap_Don
+  - tuoi_loai_1
+  - tuoi_loai_2
+  - tuoi_loai_3
+
+actions:
+  - action_hello_fan
+  - action_submit
+
+
+entities:
+- user_name
+- phone_number
+
+slots:
+  tuoi:
+    type: unfeaturized
+  user_name:
+    type: unfeaturized
+  phone_number:
+    type: unfeaturized
+
+forms:
+  customer_details_form:
+    user_name:
+      - type: from_entity
+        entity: user_name
+    phone_number:
+      - type: from_entity
+        entity: phone_number
+
+responses:
+  utter_chao_hoi:
+  - text: "Chào bạn! Bạn cần tư vấn về SP bánh dinh dưỡng Hebi?"
+    buttons:
+      - title: "Thông tin sản phẩm"
+        payload: "/chi_tiet"
+      - title: "Chi tiết về cách dùng"
+        payload: "/tu_van"
+
+  utter_tu_van:
+    - text: "Bye👋👋"
+    - text: "Xin chào! Hẹn gặp lại👋👋"
+
+
+  utter_tam_biet:
+  - text: "Bye👋👋"
+  - text: "Xin chào! Hẹn gặp lại👋👋"
+
+  utter_cam_on:
+    - text: "😉😉😉"
+
+
+
+  utter_thanh_phan_dinh_duong:
+    - text: "Thành phần Đơn vị Hàm lượng trong 1 gói (92g)\n
+             - Năng lượng kcal 500, Protein(g) 14.1, Lipid (g) 31.9 Axit béo n-6 (g) 4.44, Axit béo n-3 (g) 1.48, Carbohydrate (g) 39.1"
+
+  utter_thanh_phan:
+  - text: "Thành phần: Đậu tương (10%), đậu xanh (13%), gạo (5%), vừng (2%), sữa bột (7,5%), đạm whey (7,6%), maltodextrin, đường kính, shortening, dầu thực vật, hỗn hợp vitamin và khoáng chất (Vitamin A, C, D, E, K, B1, B2, B5, B7, B9, B12, canxi, kali, phosphor, magie, kẽm, đồng, Iốt, selen)."
+
+  utter_huong_vi:
+    - text: "Có mùi thơm đặc trưng của đậu và ngậy."
+
+  utter_cong_dung:
+  - text: "  - Cung cấp đầy đủ và cân đối protein động vật và thực vật giúp tạo hình, điều hòa hoạt động của cơ thể và cung cấp năng lượng để cơ thể sớm tái tạo mô và hồi phục sức khỏe.\n
+    - Cung cấp chất béo tạo năng lượng cho cơ thể khỏe mạnh.\n
+      - Cung cấp các vitamin và khoáng chất cần thiết giúp cơ thể phát triển: Canxi, sắt, kẽm, Biotin...giúp trẻ ăn ngon miệng và hấp thu dinh dưỡng tốt nhất để đạt cân nặng và chiều cao tối ưu. Đặc biệt với hàm lượng omega 3, Omega 6 phát triển trí não giúp trẻ phát triển toàn diện cả về thể lực và trí lực."
+#5
+  utter_chong_chi_dinh:
+  - text: "Khi sử dụng sản phẩm cần lưu ý:..."
+
+  utter_huong_dan_su_dung:
+  - text: "Sử dụng trực tiếp (không cần trộn với nước trước khi sử dụng)\nTuổi từ 12-24 tháng tuổi: dùng theo chỉ định của bác sỹ dinh dưỡng\nTrẻ em trên 24 tháng tuổi và người già, người mới ốm dậy có thể ăn 1-2 gói/ ngày theo nhu cầu năng lượng của cơ thể."
+
+  utter_han_su_dung:
+  - text: "Hạn sử dụng 24 tháng kể từ ngày sản xuất ghi trên bao bì sản phẩm. Hạn dùng sau khi mở là 15 ngày"
+
+  utter_xuat_su:
+  - text: "Sản phẩm do viện dinh dưỡng Quốc gia Việt Nam sản xuất"
+
+  utter_cong_nghe_san_xuat:
+  - text: "Sản phẩm được sản xuất bằng công nghệ ..."
+#10
+  utter_uu_dai:
+  - text: "Mua trên 20 bánh bạn được tặng thêm 1 bánh dinh dưỡng Hebi.\nFree Ship khi mua trên 20 bánh.\nChỉ nhận Ship nếu đơn hàng mua 10 bánh trở lên"
+
+  utter_gia:
+  - text: "Giá của sản phẩm là 320k/10 gói."
+  - text: "Shop bán ít nhất 10 gói. Giá 32k/gói"
+
+  utter_san_pham_kem_theo:
+  - text: "Bạn có thể dùng sản phẩm kết hợp với Men vi khuẩn sống Việt Nhật để có được hiệu quả tốt nhất. Thông tin chi tiết bạn có thể tham khảo (Link sp)"
+
+  utter_nhan_biet_hang_that:
+  - text: "Hình dạng: Dập khuân dạng viên
+Màu sắc: Màu vàng tươi
+Mùi vị: Có mùi thơm đặc trưng của đậu"
+
+  utter_bao_hanh:
+  - text: "Vui lòng kiểm tra hàng liên hệ ngay với chúng tôi trong vòng 24h từ khi nhận hàng nếu sản phẩm có dấu hiệu hư hỏng để nhận chính sách đổi trả. Không nhận bất yêu cầu phản hồi quá 24h.\nĐổi trả hàng trong vòng 7 ngày."
+
+#15
+  utter_giao_hang:
+  - text: "Giao hàng Toàn Quốc.\nShop gửi thông qua đơn vị vận chuyển Giao Hàng Tiết Kiệm ạ!"
+
+  utter_doi_tuong_dung:
+    - text: "Những đối tượng cần phục hồi dinh dưỡng như:\n
+           + Trẻ em trên 01 tuổi bị suy dinh dưỡng cấp tính.\n
+           + Trẻ em trên 06 tháng bị bệnh hoặc cần phục hồi sức khỏe sau thời gian bệnh.\n
+           + Trẻ suy dinh dưỡng cấp tính do sinh non.\n
+           + Người già, người mới ốm dậy hoặc người bệnh sau phẫu thuật."
+
+
+  utter_tuoi:
+    - text: "Người dùng bao nhiêu tuổi?"
+      buttons:
+        - title: "Dưới 2 tuổi"
+          payload: "/tuoi_loai_1"
+        - title: "2 đến 15 tuổi"
+          payload: "/tuoi_loai_2"
+        - title: "Trên 15 tuổi"
+          payload: "/tuoi_loai_3"
+
+  utter_tuoi_loai_1:
+  - text: "Trẻ dưới 2 tuổi bổ sung mỗi ngày khoảng 6 miếng. Chia đều cho ăn trực tiếp vào các bữa phụ hoặc pha cùng sữa công thức.\nNếu thay thế bữa chính 1 bữa bé cần ăn 4 miếng cộng 150ml sữa!"
+
+  utter_tuoi_loai_2:
+  - text: "Cách dùng cho trẻ từ 2-15 tuổi!"
+
+  utter_tuoi_loai_3:
+  - text: "Cách dùng cho người trên 15 tuổi!"
+
+  utter_nhu_cau_su_dung:
+  - text: "Vui lòng cho biết mục đích sử dụng sản phẩm của bạn!"
+
+  utter_chi_tiet:
+  - text: "Các thông tin về sản phẩm như: thành phần dinh dưỡng, hương vị, công dụng, hạn dùng,... Bạn cần thông tin về:"
+    buttons:
+      - title: "Giá SP"
+        payload: "/gia"
+      - title: "Công dụng"
+        payload: "/cong_dung"
+
+  utter_co_vu: #cổ vũ tinh thần.
+  - text: "Đây là một cái gì đó để bạn vui lên :"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_hoi_giup_gi:
+  - text: "Bạn cần giúp gì nào? 🤔🤔"
+
+  utter_vui:
+  - text: "Tuyệt! tiếp tục nào!👋👋"
+
+  utter_i_am_a_chatbot:
+  - text: "Tôi là trợ lí ảo 🤖 của page Bánh Dinh Dưỡng HEBI, nguồn từ Rasa. \n
+          tôi được tạo ra để có thể hỗ trợ cô chủ tôi nhận thông tin đặt hàng\n
+          từ quý khách\n
+          nếu có bất cứ điều gì sai sót mang quý khác thông cảm!🤗🤗"
+
+#####################################################
+  utter_hoi_mua_gi:
+    - text: "Bạn có muốn bắt đầu tạo đơn không"
+      buttons:
+      - title: "Bắt đầu"
+        payload: "/Yeu_Cau_Lap_Don"
+
+  utter_hoi_ban_gi:
+    - text: "Dạ bên em có các loại sản phẩm như:\n
+                - Bánh dinh dưỡng HEBI 🍰\n
+                - Men tiêu hóa Colibacter 📦"
+
+  utter_ask_user_name:
+    - text: "Cho mình hỏi bạn tên gì?🤔🤔"
+    - text: "Bạn cho mình xin tên🤔🤔"
+    - text: "Tên của bạn là gì?🤔🤔"
+
+  utter_ask_phone_number:
+    - text: "☎ Số điện thoại của bạn là..."
+    - text: "☎ Cho mình xin số điện thoại của bạn ạ..."
+
+  utter_details_thanks:
+    - text: "Đơn hàng bạn {User_Name} đã được lưu lại!\n
+            ☎ Số điện thoại: {Phone_Number}\n
+            Bạn sẽ nhận được cuộc gọi xác nhận trong vòng 24h\n
+    Cảm ơn {User_Name} đã quan tâm đến bánh dinh dưỡng HEBI"
+
+  utter_out_of_scope:
+    - text: "Xin lỗi ! Tôi chưa hiểu ý của bạn. Làm ơn hãy cho tôi biết chính xác bạn cần gì. Tôi là một người máy.😢😢😢"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
