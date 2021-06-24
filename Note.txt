@@ -4,6 +4,7 @@
     rasa init
 - Run Server:
     rasa run --endpoints endpoints.yml --credentials credentials.yml
+    ngrok http 5005
 - Run Action:
     rasa run actions
 - Train a Model: 

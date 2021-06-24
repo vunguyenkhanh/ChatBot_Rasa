@@ -14,10 +14,12 @@ nlu:
     - chị ơi
     - cháu ơi
     - chào
+    - Ad ơi
     - có ai ở đây không?
     - Ê
     - .
     - cho mình hỏi
+    - Ai đó có thể hỗ trợ cho tôi không?
 
 - intent: tam_biet
   examples: |
@@ -78,6 +80,7 @@ nlu:
     - rất rất hoàn hảo
     - rất tốt
     - hoàn toản
+
 - intent: tam_trang_toi_te
   examples: |
     - ngày của tôi thật kinh khủng
@@ -93,7 +96,6 @@ nlu:
     - rất không ổn
     - rất rất... buồn
 
-
 - intent: thu_thach_bot
   examples: |
     - bạn có phải là bot không?
@@ -107,6 +109,7 @@ nlu:
     - tên của bạn là gì
     - tên của chị là gì
     - tên của anh là gì
+    - bạn là ai
     - cho mình hỏi tên nhé
     - mình muốn biết tên bạn
     - mình muốn tiện xưng hộ hơn, cho mình biết tên nhé
@@ -132,12 +135,14 @@ nlu:
 - intent: thanh_phan_dinh_duong
   examples: |
     - chất dinh dưỡng
-    - bổ sung những chất gi?
+    - bổ sung những chất gì?
+    - thành phần dinh dưỡng
 
 - intent: thanh_phan
   examples: |
     - thành phần
-    - gồm những thành phẩn nào?
+    - sản phẩm gồm những thành phẩn nào?
+    - thành phần là gì?
 
 - intent: huong_vi
   examples: |
@@ -152,11 +157,12 @@ nlu:
     - có lợi
     - tốt cho
     - công dụng
-    - công dụng của sản phẩm là gì vậy?
+    - tác dụng
 
 - intent: chong_chi_dinh 
   examples: |
     - lưu ý
+    - chú ý
     - chống chỉ định
     - không dùng cho
     - ko dùng cho
@@ -167,14 +173,16 @@ nlu:
     - liều dùng
     - dùng làm sao
     - cách dùng
-    - hướng dẫn sủ dụng
+    - hướng dẫn sử dụng
     - có thể dùng theo những cách nào
     - dùng sản phẩm này thế nào ạ
+    - dùng như thế nào
 
 - intent: han_su_dung
   examples: |
     - hạn dùng
     - hạn sử dụng
+    - dùng bao lâu
     - sản phẩm có thể bảo quản trong bao lâu?
 
 - intent: xuat_su
@@ -240,11 +248,13 @@ nlu:
     - có ship không ạ?
     - có ship ko ạ?
     - gửi qua đường bưu điện hay như thế nào ạ?
+    - Bạn có những lựa chọn giao hàng nào?
 
 - intent: doi_tuong_dung
   examples: |
     - ai có thể dùng được
     - dùng cho ai
+    - đối tượng dùng
 
 - intent: doi_tuong
   examples: |
@@ -272,6 +282,7 @@ nlu:
     - Thông tin chi tiết
     - Tuổi
     - Cách dùng theo tuổi
+    - dùng như thế nào
 
 #############################################################
 - intent: hoi_ban_gi
@@ -282,11 +293,13 @@ nlu:
     - mình chưa biết mua cái gì?
     - mình mua cả cửa hàng này?
     - mua gì bây giờ nhỉ
+    - Sản phẩm nào bạn bán chạy nhất?
 
 - intent: Yeu_Cau_Lap_Don
   examples: |
-    - Anh muốn mua bánh 10 bánh
+    - Mình muốn mua 10 bánh
     - Em muốn đặt hàng
+    - cho mình đặt hàng
 
 - intent: my_name
   examples: |

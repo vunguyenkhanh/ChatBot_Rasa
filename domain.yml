@@ -49,7 +49,6 @@ actions:
   - action_hello_fan
   - action_submit
 
-
 entities:
 - user_name
 - phone_number
@@ -80,19 +79,12 @@ responses:
       - title: "Chi tiết về cách dùng"
         payload: "/tu_van"
 
-  utter_tu_van:
-    - text: "Bye👋👋"
-    - text: "Xin chào! Hẹn gặp lại👋👋"
-
-
   utter_tam_biet:
   - text: "Bye👋👋"
   - text: "Xin chào! Hẹn gặp lại👋👋"
 
   utter_cam_on:
     - text: "😉😉😉"
-
-
 
   utter_thanh_phan_dinh_duong:
     - text: "Thành phần Đơn vị Hàm lượng trong 1 gói (92g)\n
@@ -110,7 +102,7 @@ responses:
       - Cung cấp các vitamin và khoáng chất cần thiết giúp cơ thể phát triển: Canxi, sắt, kẽm, Biotin...giúp trẻ ăn ngon miệng và hấp thu dinh dưỡng tốt nhất để đạt cân nặng và chiều cao tối ưu. Đặc biệt với hàm lượng omega 3, Omega 6 phát triển trí não giúp trẻ phát triển toàn diện cả về thể lực và trí lực."
 #5
   utter_chong_chi_dinh:
-  - text: "Khi sử dụng sản phẩm cần lưu ý:..."
+  - text: "Khi sử dụng sản phẩm cần lưu ý: Bảo quản nơi khô ráo, thoáng mát tránh ánh sáng. Gói chưa sử dụng hết được đậy kín, để nơi khô, thoáng mát và dùng hết trong vòng 24h sau khi mở."
 
   utter_huong_dan_su_dung:
   - text: "Sử dụng trực tiếp (không cần trộn với nước trước khi sử dụng)\nTuổi từ 12-24 tháng tuổi: dùng theo chỉ định của bác sỹ dinh dưỡng\nTrẻ em trên 24 tháng tuổi và người già, người mới ốm dậy có thể ăn 1-2 gói/ ngày theo nhu cầu năng lượng của cơ thể."
@@ -122,7 +114,7 @@ responses:
   - text: "Sản phẩm do viện dinh dưỡng Quốc gia Việt Nam sản xuất"
 
   utter_cong_nghe_san_xuat:
-  - text: "Sản phẩm được sản xuất bằng công nghệ ..."
+  - text: "Hebi là sản phẩm thuộc dạng RUTF (Ready To Use Therapeutic Food).fCách dùng cho trẻ từ 2-15 tuổi!"
 #10
   utter_uu_dai:
   - text: "Mua trên 20 bánh bạn được tặng thêm 1 bánh dinh dưỡng Hebi.\nFree Ship khi mua trên 20 bánh.\nChỉ nhận Ship nếu đơn hàng mua 10 bánh trở lên"
@@ -142,7 +134,6 @@ Mùi vị: Có mùi thơm đặc trưng của đậu"
   utter_bao_hanh:
   - text: "Vui lòng kiểm tra hàng liên hệ ngay với chúng tôi trong vòng 24h từ khi nhận hàng nếu sản phẩm có dấu hiệu hư hỏng để nhận chính sách đổi trả. Không nhận bất yêu cầu phản hồi quá 24h.\nĐổi trả hàng trong vòng 7 ngày."
 
-#15
   utter_giao_hang:
   - text: "Giao hàng Toàn Quốc.\nShop gửi thông qua đơn vị vận chuyển Giao Hàng Tiết Kiệm ạ!"
 
@@ -152,7 +143,6 @@ Mùi vị: Có mùi thơm đặc trưng của đậu"
            + Trẻ em trên 06 tháng bị bệnh hoặc cần phục hồi sức khỏe sau thời gian bệnh.\n
            + Trẻ suy dinh dưỡng cấp tính do sinh non.\n
            + Người già, người mới ốm dậy hoặc người bệnh sau phẫu thuật."
-
 
   utter_tuoi:
     - text: "Người dùng bao nhiêu tuổi?"
@@ -197,8 +187,8 @@ Mùi vị: Có mùi thơm đặc trưng của đậu"
   utter_i_am_a_chatbot:
   - text: "Tôi là trợ lí ảo 🤖 của page Bánh Dinh Dưỡng HEBI, nguồn từ Rasa. \n
           tôi được tạo ra để có thể hỗ trợ cô chủ tôi nhận thông tin đặt hàng\n
-          từ quý khách\n
-          nếu có bất cứ điều gì sai sót mang quý khác thông cảm!🤗🤗"
+          từ quý khách.\n
+          Nếu có bất cứ điều gì sai sót mang quý khác thông cảm!🤗🤗"
 
 #####################################################
   utter_hoi_mua_gi:
@@ -222,14 +212,17 @@ Mùi vị: Có mùi thơm đặc trưng của đậu"
     - text: "☎ Cho mình xin số điện thoại của bạn ạ..."
 
   utter_details_thanks:
-    - text: "Đơn hàng bạn {User_Name} đã được lưu lại!\n
-            ☎ Số điện thoại: {Phone_Number}\n
+    - text: "Đơn hàng bạn {user_name} đã được lưu lại!\n
+            ☎ Số điện thoại: {phone_number}\n
             Bạn sẽ nhận được cuộc gọi xác nhận trong vòng 24h\n
-    Cảm ơn {User_Name} đã quan tâm đến bánh dinh dưỡng HEBI"
+    Cảm ơn {user_name} đã quan tâm đến bánh dinh dưỡng HEBI"
 
   utter_out_of_scope:
     - text: "Xin lỗi ! Tôi chưa hiểu ý của bạn. Làm ơn hãy cho tôi biết chính xác bạn cần gì. Tôi là một người máy.😢😢😢"
 
+  utter_default:
+    - text: "Xin lỗi ! Tôi không hiểu, bạn có thể nói lại được không?"
+    
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
